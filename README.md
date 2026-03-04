@@ -201,8 +201,7 @@
 
 ## Satellites
 
-  ### 1️⃣ Fix Mode
+  ### 1️⃣ Fix Mode :
+   - Indicates the type of position solution currently computed by the GPS receiver.
 
-Indicates the type of position solution currently computed by the GPS receiver.
-
-It shows whether the receiver has enough satellites to calculate location and time.
+   - It shows whether the receiver has enough satellites to calculate location and time.
