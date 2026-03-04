@@ -264,5 +264,22 @@
 
 
 
+
+
  ### 🛰 Satellite Parameters Explanation
+
+
+   ## 1️⃣ PRN : Pseudo Random Noise number
+
+   - It is the unique ID number assigned to a satellite.
+ 
+   - Each satellite transmits a unique PRN code so the receiver can identify it.
+
+		📌 Example
+		
+		- PRN 1
+		
+		- PRN 12
+		
+		- PRN 25
 
