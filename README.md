@@ -47,19 +47,19 @@
 
    - ### Active sources
 	 
-	 - 🔹GPS 
+	 -  ### 🔹GPS 
 		 - Time received via NMEA (serial data)
 		 - Provides UTC timestamp
 		 - Lower precision (milliseconds level)
 	
-	 - 🔹PPS (Pulse Per Second)
+	 -  ### 🔹PPS (Pulse Per Second)
 		   - Hardware timing pulse from GPS module
 		   - Extremely precise (microsecond level)
 		   - Used to discipline the system clock
 
 
 
-	   1️⃣ Offset (ms) = Difference between system clock and reference source.	
+	  ### 1️⃣ Offset (ms) = Difference between system clock and reference source.	
 	
 	   | Offset    | Meaning         |
 	   | --------- | --------------- |
@@ -72,7 +72,7 @@
 
 
 
-	  2️⃣ Delay (ms) = Estimated network or communication delay to the source.
+	 ### 2️⃣ Delay (ms) = Estimated network or communication delay to the source.
 
 		- For:
 		  - PPS → Near zero (local hardware)
@@ -90,7 +90,7 @@
 
 
 
-	 3️⃣ Jitter (ms) = Variation in offset over time.
+	 ### 3️⃣ Jitter (ms) = Variation in offset over time.
 
 		| Jitter        | Quality   |
 		| ------------- | --------- |
@@ -104,7 +104,7 @@
 
 
 
-	 4️⃣ Reach =
+	 ### 4️⃣ Reach =
 		- Indicates whether the source is reachable and responding.
 	    - Displayed as an octal number (0–377).
 		- It represents the success of the last 8 polling attempts.
