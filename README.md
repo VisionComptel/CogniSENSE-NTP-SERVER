@@ -108,7 +108,7 @@
 
 
 
-	 ### 4️⃣ Reach =
+	 ### 4️⃣ Reach 
 		- Indicates whether the source is reachable and responding.
 	    - Displayed as an octal number (0–377).
 		- It represents the success of the last 8 polling attempts.
