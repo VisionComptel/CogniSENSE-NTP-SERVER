@@ -2,4 +2,3 @@
 
 ##1️⃣ DASHBOARD
 
-1. Local Time
