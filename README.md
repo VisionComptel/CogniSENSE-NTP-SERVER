@@ -13,6 +13,26 @@
      - Extremely accurate (microsecond or even nanosecond precision)
    
    - ### GPS Receiver Status
-     - ### Satellites
+     - ### Satellites-
+        - ≥ 6 = Good
+        - 4-5 = Moderate
+        - ≤ 3 = Poor
+
+   - ### Average SNR (Signal-to-Noise Ratio)
+     - Average SNR is the mean signal strength of all satellites currently used in the fix.
+     - It indicates overall signal quality and antenna reception performance.
+     - Higher value = better signal quality.
+        | SNR (dB-Hz) | Quality     |
+        | ----------- | ----------- |
+        | > 40        | Excellent   |
+        | 35 – 40     | Very Strong |
+        | 25 – 35     | Moderate    |
+        | 20 – 25     | Weak        |
+        | < 20        | Very Poor   |
+      ​
+
+	​
+
+​​
    
    
