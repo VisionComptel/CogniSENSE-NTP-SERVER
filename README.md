@@ -8,10 +8,10 @@
 - ### Discipline Source 
   PPS-Pulse Per Second
 
-  -A hardware signal from a GPS module
+  - A hardware signal from a GPS module
 
-  -Sends one precise electrical pulse every second
+  - Sends one precise electrical pulse every second
 
-  -Extremely accurate (microsecond or even nanosecond precision)
+  - Extremely accurate (microsecond or even nanosecond precision)
 
 
