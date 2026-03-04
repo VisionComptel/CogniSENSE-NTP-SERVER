@@ -164,26 +164,26 @@
 		 - Small skew is good.
 
    🔹 Root Delay (ms)
-		  Total network delay to the ultimate reference clock.
-			For PPS:
-				- Should be near zero
-				- 1 nanosecond is extremely small
-				- Indicates local hardware reference
+			  Total network delay to the ultimate reference clock.
+				 For PPS:
+					- Should be near zero
+					- 1 nanosecond is extremely small
+					- Indicates local hardware reference
 
    🔹 Root Dispersion (ms)
-		- Maximum estimated error relative to the primary reference.
-		- Represents accumulated uncertainty.
-		- Lower is better.
+			- Maximum estimated error relative to the primary reference.
+			- Represents accumulated uncertainty.
+			- Lower is better.
 
    🔹 Last Offset (ms)
-	   - Most recent offset measurement.
-	   - 0.000019 sec = 19 microseconds
-	   - Very small — healthy system.
+		   - Most recent offset measurement.
+		   - 0.000019 sec = 19 microseconds
+		   - Very small — healthy system.
 
    🔹 Update Interval (s)
-		Polling interval between synchronization updates.
-		Smaller interval = faster correction
-		Longer interval = stable system
+			- Polling interval between synchronization updates.
+			- Smaller interval = faster correction
+			- Longer interval = stable system
 
 
   🔹 Leap Status
