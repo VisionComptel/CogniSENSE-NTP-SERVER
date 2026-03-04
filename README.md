@@ -52,7 +52,7 @@
 		 - Provides UTC timestamp
 		 - Lower precision (milliseconds level)
 	
-	  -🔹PPS (Pulse Per Second)
+	 - 🔹PPS (Pulse Per Second)
 		   - Hardware timing pulse from GPS module
 		   - Extremely precise (microsecond level)
 		   - Used to discipline the system clock
@@ -139,25 +139,25 @@
 ​​
    
    - 🔹 Ref Time Epoch
-			- The last time the system clock was updated from the reference source.
-			- High precision timestamp
+		- The last time the system clock was updated from the reference source.
+		- High precision timestamp
 
 
    - 🔹 System Time Offset
-			- Difference between system clock and reference source (in seconds).
+		- Difference between system clock and reference source (in seconds).
 
 
    - 🔹 RMS Offset
-		    - Root Mean Square offset. Represents average deviation over time.
-			- Lower RMS = more stable clock.
+		- Root Mean Square offset. Represents average deviation over time.
+		- Lower RMS = more stable clock.
 
    - 🔹 Frequency PPM
-			- Clock frequency correction in Parts Per Million.
-			- Indicates how much the system oscillator is being adjusted.
-				- Higher value = larger correction needed
-				- Happens due to crystal drift
-			- For embedded devices (like Raspberry Pi), some drift is normal.
-			- Chrony continuously corrects this.
+		- Clock frequency correction in Parts Per Million.
+		- Indicates how much the system oscillator is being adjusted.
+			- Higher value = larger correction needed
+			- Happens due to crystal drift
+		- For embedded devices (like Raspberry Pi), some drift is normal.
+		- Chrony continuously corrects this.
 
    - 🔹 Skew
 		 - Estimated error margin of the frequency correction.
@@ -165,26 +165,26 @@
 		 - Small skew is good.
 
    - 🔹 Root Delay (ms)
-			 - Total network delay to the ultimate reference clock.
-			 - For PPS:
-					- Should be near zero
-					- 1 nanosecond is extremely small
-					- Indicates local hardware reference
+		 - Total network delay to the ultimate reference clock.
+		 - For PPS:
+				- Should be near zero
+				- 1 nanosecond is extremely small
+				- Indicates local hardware reference
 
    - 🔹 Root Dispersion (ms)
-			- Maximum estimated error relative to the primary reference.
-			- Represents accumulated uncertainty.
-			- Lower is better.
+		- Maximum estimated error relative to the primary reference.
+		- Represents accumulated uncertainty.
+		- Lower is better.
 
    - 🔹 Last Offset (ms)
-		   - Most recent offset measurement.
-		   - 0.000019 sec = 19 microseconds
-		   - Very small — healthy system.
+	   - Most recent offset measurement.
+	   - 0.000019 sec = 19 microseconds
+	   - Very small — healthy system.
 
    - 🔹 Update Interval (s)
-			- Polling interval between synchronization updates.
-			- Smaller interval = faster correction
-			- Longer interval = stable system
+		- Polling interval between synchronization updates.
+		- Smaller interval = faster correction
+		- Longer interval = stable system
 
 
   - 🔹 Leap Status
