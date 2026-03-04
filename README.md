@@ -122,7 +122,7 @@
  
   - ### NTP Server  Tracking Summary
 
-    - 🔹Reference Name
+    -  ### 🔹Reference Name
 		 - PPS: Indicates the current primary time source used to discipline the system clock.
 
 
@@ -205,3 +205,26 @@
    - Indicates the type of position solution currently computed by the GPS receiver.
 
    - It shows whether the receiver has enough satellites to calculate location and time.
+
+		| Fix Mode   | Meaning                        | Satellites Required |
+		| ---------- | ------------------------------ | ------------------- |
+		| No Fix (1) | No valid solution              | < 3                 |
+		| 2D Fix (2) | Latitude & Longitude only      | ≥ 3                 |
+		| 3D Fix (3) | Latitude, Longitude & Altitude | ≥ 4                 |
+
+  ### 2️⃣ HDOP (Horizontal Dilution of Precision):
+   - Measures accuracy of horizontal position (latitude & longitude).
+
+   - Lower value = better satellite geometry.
+
+   - HDOP Ranges
+	
+		| HDOP   | Quality   |
+		| ------ | --------- |
+		| 0 – 1  | Ideal     |
+		| 1 – 2  | Excellent |
+		| 2 – 5  | Good      |
+		| 5 – 10 | Moderate  |
+		| > 10   | Poor      |
+
+
