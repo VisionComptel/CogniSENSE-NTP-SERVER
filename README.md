@@ -228,3 +228,41 @@
 		| > 10   | Poor      |
 
 
+  ### 3️⃣ PDOP (Position Dilution of Precision):
+   - Measures overall 3D position accuracy (horizontal + vertical).
+     
+   - Lower is better.
+
+   - PDOP Ranges
+
+		| PDOP  | Quality   |
+		| ----- | --------- |
+		| 0 – 2 | Excellent |
+		| 2 – 5 | Good      |
+		| 5 – 8 | Moderate  |
+		| > 8   | Poor      |
+
+
+ ### 4️⃣ GDOP (Geometric Dilution of Precision):
+  - Measures overall solution quality including:
+	- Position
+	- Altitude
+	- Time
+   
+  - GDOP includes timing accuracy impact.
+    
+  - It is the most complete DOP value.
+
+  - GDOP ranges 
+
+	| GDOP   | Quality   |
+	| ------ | --------- |
+	| 0 – 2  | Excellent |
+	| 2 – 5  | Good      |
+	| 5 – 10 | Moderate  |
+	| > 10   | Poor      |
+
+
+
+ ### 🛰 Satellite Parameters Explanation
+
