@@ -12,7 +12,7 @@
   - Sends one precise electrical pulse every second
   - Extremely accurate (microsecond or even nanosecond precision)
 
-- ## GPS Receiver Status
+- ### GPS Receiver Status
   - ### Satellites
 
 
