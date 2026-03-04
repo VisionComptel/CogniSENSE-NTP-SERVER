@@ -122,11 +122,11 @@
  
   - ### NTP Server  Tracking Summary
 
-    -🔹 Reference Name
+    - 🔹Reference Name
 		 - PPS: Indicates the current primary time source used to discipline the system clock.
 
 
-	-🔹 Stratum
+	- 🔹Stratum
 		- 1 : Indicates the NTP hierarchy level.
 		- Stratum 1 means : Your server is directly synchronized to GPS (via PPS).
 
@@ -138,20 +138,20 @@
 	  | 3+      | Further downstream              |
 ​​
    
-   -🔹 Ref Time Epoch
+   - 🔹 Ref Time Epoch
 			 - The last time the system clock was updated from the reference source.
 			 - High precision timestamp
 
 
-   -🔹 System Time Offset
+   - 🔹 System Time Offset
 			- Difference between system clock and reference source (in seconds).
 
 
-   -🔹 RMS Offset
+   - 🔹 RMS Offset
 			- Root Mean Square offset. Represents average deviation over time.
 			- Lower RMS = more stable clock.
 
-   -🔹 Frequency PPM
+   - 🔹 Frequency PPM
 			- Clock frequency correction in Parts Per Million.
 			- Indicates how much the system oscillator is being adjusted.
 				- Higher value = larger correction needed
@@ -159,7 +159,7 @@
 			- For embedded devices (like Raspberry Pi), some drift is normal.
 			- Chrony continuously corrects this.
 
-   -🔹 Skew
+   - 🔹 Skew
 		 - Estimated error margin of the frequency correction.
 		 - Lower skew = higher confidence.
 		 - Small skew is good.
