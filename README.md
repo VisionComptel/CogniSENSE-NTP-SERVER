@@ -1,4 +1,4 @@
 # CogniSENSE-NTP-SERVER
 
-###1️⃣ DASHBOARD
+### DASHBOARD
 
