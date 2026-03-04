@@ -201,7 +201,7 @@
 
 ## Satellites
 
-  1️⃣ ### Fix Mode
+  ### 1️⃣ Fix Mode
 
 Indicates the type of position solution currently computed by the GPS receiver.
 
