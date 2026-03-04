@@ -5,7 +5,7 @@
 - ### Local Time
    Local Time comes from the Raspberry Pi system clock.
 
--### Discipline Source 
+- ### Discipline Source 
   PPS-Pulse Per Second
 
   -A hardware signal from a GPS module
