@@ -4,6 +4,13 @@
 
    - ### Local Time
       Local Time comes from the Raspberry Pi system clock.
+
+
+
+   - ### Accuracy
+        It is the RMS Offset.
+
+
    
    - ### Discipline Source 
      PPS-Pulse Per Second
