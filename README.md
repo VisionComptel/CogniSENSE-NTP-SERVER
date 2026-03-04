@@ -55,18 +55,43 @@
 		   - Extremely precise (microsecond level)
 		   - Used to discipline the system clock
 
-   1️⃣Offset (ms) - Difference between system clock and reference source.	
+	   1️⃣ Offset (ms) = Difference between system clock and reference source.	
+	
+	   | Offset    | Meaning         |
+	   | --------- | --------------- |
+	   | ±0.001 ms | Excellent       |
+	   | ±0.01 ms  | Very Good       |
+	   | ±0.1 ms   | Acceptable      |
+	   | > ±1 ms   | Needs attention |
+	
+	   - Lower absolute value is better.
 
-   | Offset    | Meaning         |
-   | --------- | --------------- |
-   | ±0.001 ms | Excellent       |
-   | ±0.01 ms  | Very Good       |
-   | ±0.1 ms   | Acceptable      |
-   | > ±1 ms   | Needs attention |
+	  2️⃣ Delay (ms) = Estimated network or communication delay to the source.
 
-   - Lower absolute value is better.
+		- For:
+		  - PPS → Near zero (local hardware)
+		  - GPS (NMEA) → Small serial delay
+		  - Network NTP → Network latency included
+		
+		Lower delay = better accuracy.
 
-​
+		| Source       | Normal Delay |
+		| ------------ | ------------ |
+		| PPS          | ~0 ms        |
+		| GPS (serial) | 1–10 ms      |
+		| Internet NTP | 10–100 ms    |
+
+
+	 3️⃣ Jitter (ms) = Variation in offset over time.
+
+		| Jitter        | Quality   |
+		| ------------- | --------- |
+		| < 0.01 ms     | Excellent |
+		| 0.01 – 0.1 ms | Good      |
+		| 0.1 – 1 ms    | Moderate  |
+		| > 1 ms        | Unstable  |
+
+  		#### For PPS-based systems : Jitter should be extremely low.
 
 ​​
    
