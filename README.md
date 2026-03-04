@@ -52,7 +52,7 @@
 		 - Provides UTC timestamp
 		 - Lower precision (milliseconds level)
 	
-	 -🔹PPS (Pulse Per Second)
+	  -🔹PPS (Pulse Per Second)
 		   - Hardware timing pulse from GPS module
 		   - Extremely precise (microsecond level)
 		   - Used to discipline the system clock
