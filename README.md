@@ -122,12 +122,12 @@
   - ### NTP Server  Tracking Summary
 
     🔹 Reference Name
-		 PPS: Indicates the current primary time source used to discipline the system clock.
+		 - PPS: Indicates the current primary time source used to discipline the system clock.
 
 
 	🔹 Stratum
-		1 : Indicates the NTP hierarchy level.
-		Stratum 1 means : Your server is directly synchronized to GPS (via PPS).
+		- 1 : Indicates the NTP hierarchy level.
+		- Stratum 1 means : Your server is directly synchronized to GPS (via PPS).
 
 	  | Stratum | Meaning                         |
 	  | ------- | ------------------------------- |
@@ -143,7 +143,7 @@
 
 
    🔹 System Time Offset
-			Difference between system clock and reference source (in seconds).
+			- Difference between system clock and reference source (in seconds).
 
 
    🔹 RMS Offset
@@ -164,8 +164,8 @@
 		 - Small skew is good.
 
    🔹 Root Delay (ms)
-			  Total network delay to the ultimate reference clock.
-				 For PPS:
+			 - Total network delay to the ultimate reference clock.
+			 - For PPS:
 					- Should be near zero
 					- 1 nanosecond is extremely small
 					- Indicates local hardware reference
