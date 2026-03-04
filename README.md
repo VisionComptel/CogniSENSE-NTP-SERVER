@@ -45,7 +45,7 @@
 
 ## Time & Synchronization 
    - ### Active sources 
-	   🔹#### GPS
+	   ####🔹GPS
 		 - Time received via NMEA (serial data)
 		 - Provides UTC timestamp
 		 - Lower precision (milliseconds level)
