@@ -126,13 +126,13 @@
 	-  ### 🔹Stratum
 		- 1 : Indicates the NTP hierarchy level.
 		- Stratum 1 means : Your server is directly synchronized to GPS (via PPS).
-
-	  | Stratum | Meaning                         |
-	  | ------- | ------------------------------- |
-	  | 0       | Atomic clock / GPS hardware     |
-	  | 1       | Directly connected to Stratum 0 |
-	  | 2       | Sync from Stratum 1             |
-	  | 3+      | Further downstream              |
+	
+		  | Stratum | Meaning                         |
+		  | ------- | ------------------------------- |
+		  | 0       | Atomic clock / GPS hardware     |
+		  | 1       | Directly connected to Stratum 0 |
+		  | 2       | Sync from Stratum 1             |
+		  | 3+      | Further downstream              |
 ​​
    
    -  ### 🔹 Ref Time Epoch
