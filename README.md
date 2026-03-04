@@ -231,7 +231,7 @@
    - Lower is better.
 
    - PDOP Ranges
-
+ 
 		| PDOP  | Quality   |
 		| ----- | --------- |
 		| 0 – 2 | Excellent |
