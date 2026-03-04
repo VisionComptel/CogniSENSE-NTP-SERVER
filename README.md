@@ -40,7 +40,7 @@
 
    
   - ### Antenna Status
-      Depends on the following factors
+     - Depends on the following factors
     	- satellite ratio(Satellite used/ Visible)
     	- Signal quality (Avg Snr /Max(Snr_values))
     	- pdop value(Ideal range <= 2
