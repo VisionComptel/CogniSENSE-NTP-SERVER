@@ -2,6 +2,6 @@
 
 ### DASHBOARD
 
-*Local Time 
+- Local Time
 
 
