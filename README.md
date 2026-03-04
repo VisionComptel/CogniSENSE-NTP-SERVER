@@ -189,9 +189,20 @@
 
   - 🔹 Leap Status
 
-   | Status | Meaning                     |
-   | ------ | --------------------------- |
-   | Normal | No leap second pending      |
-   | Insert | Leap second will be added   |
-   | Delete | Leap second will be removed |
+	   | Status | Meaning                     |
+	   | ------ | --------------------------- |
+	   | Normal | No leap second pending      |
+	   | Insert | Leap second will be added   |
+	   | Delete | Leap second will be removed |
 
+
+
+
+
+## Satellites
+
+  1️⃣ ### Fix Mode
+
+Indicates the type of position solution currently computed by the GPS receiver.
+
+It shows whether the receiver has enough satellites to calculate location and time.
