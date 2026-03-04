@@ -22,6 +22,7 @@
      - Average SNR is the mean signal strength of all satellites currently used in the fix.
      - It indicates overall signal quality and antenna reception performance.
      - Higher value = better signal quality.
+       
         | SNR (dB-Hz) | Quality     |
         | ----------- | ----------- |
         | > 40        | Excellent   |
