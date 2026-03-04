@@ -1,6 +1,6 @@
 # CogniSENSE-NTP-SERVER
 
-## DASHBOARD
+# DASHBOARD
 
 - ### Local Time
    Local Time comes from the Raspberry Pi system clock.
@@ -12,7 +12,7 @@
   - Sends one precise electrical pulse every second
   - Extremely accurate (microsecond or even nanosecond precision)
 
-- ### GPS Receiver Status
+- ## GPS Receiver Status
   - ### Satellites
 
 
