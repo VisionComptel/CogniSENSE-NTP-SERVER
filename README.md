@@ -18,22 +18,19 @@
         - 4-5 = Moderate
         - ≤ 3 = Poor
 
+
+
    - ### Average SNR (Signal-to-Noise Ratio)
      - Average SNR is the mean signal strength of all satellites currently used in the fix.
      - It indicates overall signal quality and antenna reception performance.
      - Higher value = better signal quality.
-       
-        | SNR (dB-Hz) | Quality     |
-        | ----------- | ----------- |
-        | > 40        | Excellent   |
-        | 35 – 40     | Very Strong |
-        | 25 – 35     | Moderate    |
-        | 20 – 25     | Weak        |
-        | < 20        | Very Poor   |
-	
+
+	   
 	
   - ### Signal Geometry
      - Average of all Dop values (hdop,pdop,gdop)
+
+
    
   - ### Antenna Status
       Depends on the following factors
@@ -43,7 +40,7 @@
        
     ​
 
-## Time & Synchronization 
+## TIME & SYNCHRONIZATION
 
    - ### Active sources
 	 
@@ -120,7 +117,7 @@
 
  
  
-  - ### NTP Server  Tracking Summary
+  - ### NTP Server Tracking Summary
 
     -  ### 🔹Reference Name
 		 - PPS: Indicates the current primary time source used to discipline the system clock.
@@ -199,7 +196,7 @@
 
 
 
-## Satellites
+## SATELLITES
 
   ### 1️⃣ Fix Mode :
    - Indicates the type of position solution currently computed by the GPS receiver.
@@ -269,7 +266,7 @@
  ### 🛰 Satellite Parameters Explanation
 
 
-   ## 1️⃣ PRN : Pseudo Random Noise number
+   ### 1️⃣ PRN : Pseudo Random Noise number
 
    - It is the unique ID number assigned to a satellite.
  
@@ -283,3 +280,78 @@
 		
 		- PRN 25
 
+
+   ### 2️⃣ Constellation :
+
+   - Indicates which satellite system the satellite belongs to.
+
+   - Modern receivers support multiple GNSS systems.
+
+   - Multi-constellation improves:
+
+      - Accuracy
+
+      - Satellite availability
+
+      - Lower DOP
+
+
+  ### 3️⃣ Used in Fix : Indicates whether this satellite is actively used in the position/time calculation.
+
+
+  ### 4️⃣ SNR (dB) :
+
+   - SNR = Signal-to-Noise Ratio
+
+   - Measures signal strength quality from that satellite.
+
+   - Unit: dB-Hz
+
+   - Higher = stronger and cleaner signal.
+
+   - SNR Quality Table
+
+		| SNR (dB-Hz) | Signal Quality |
+		| ----------- | -------------- |
+		| > 40        | Excellent      |
+		| 35 – 40     | Very Strong    |
+		| 25 – 35     | Moderate       |
+		| 20 – 25     | Weak           |
+		| < 20        | Very Weak      |
+
+
+
+  ### 5️⃣ Elevation (°) : 
+  - Angle of the satellite above the horizon.
+  - Range : 0° (horizon) → 90° (directly overhead)
+
+
+	| Elevation | Meaning               |
+	| --------- | --------------------- |
+	| 0°–10°    | Very low, weak signal |
+	| 10°–30°   | Moderate              |
+	| 30°–60°   | Good                  |
+	| 60°–90°   | Excellent             |
+
+
+
+### 6️⃣ Azimuth (°):
+ - Compass direction of the satellite.
+
+ - Range:  0°– 360°
+
+ -    | Azimuth | Direction |
+	  | ------- | --------- |
+	  | 0°      | North     |
+	  | 90°     | East      |
+	  | 180°    | South     |
+	  | 270°    | West      |
+	
+ - Azimuth helps:
+
+	- Visualize sky distribution
+
+	- Detect antenna blockage in certain directions
+
+
+  
