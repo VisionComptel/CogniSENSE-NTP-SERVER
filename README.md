@@ -44,16 +44,20 @@
     ​
 
 ## Time & Synchronization 
-   - ### Active sources 
-		🔹GPS
+
+   - ### Active sources
+	 
+	 🔹GPS
 		 - Time received via NMEA (serial data)
 		 - Provides UTC timestamp
 		 - Lower precision (milliseconds level)
 	
-	   🔹PPS (Pulse Per Second)
+	 🔹PPS (Pulse Per Second)
 		   - Hardware timing pulse from GPS module
 		   - Extremely precise (microsecond level)
 		   - Used to discipline the system clock
+
+
 
 	   1️⃣ Offset (ms) = Difference between system clock and reference source.	
 	
@@ -65,6 +69,8 @@
 	   | > ±1 ms   | Needs attention |
 	
 	   - Lower absolute value is better.
+
+
 
 	  2️⃣ Delay (ms) = Estimated network or communication delay to the source.
 
@@ -82,6 +88,8 @@
 		| Internet NTP | 10–100 ms    |
 
 
+
+
 	 3️⃣ Jitter (ms) = Variation in offset over time.
 
 		| Jitter        | Quality   |
@@ -91,8 +99,98 @@
 		| 0.1 – 1 ms    | Moderate  |
 		| > 1 ms        | Unstable  |
 
-  		#### For PPS-based systems : Jitter should be extremely low.
+		#### For PPS-based systems : Jitter should be extremely low.
 
+
+
+
+	 4️⃣ Reach = Indicates whether the source is reachable and responding.
+				 Displayed as an octal number (0–377).
+				 It represents the success of the last 8 polling attempts.
+
+
+	 | Reach | Meaning                             |
+	 | ----- | ----------------------------------- |
+	 | 377   | Fully reachable (last 8 successful) |
+	 | 0     | Not reachable                       |
+	 | < 100 | Intermittent communication          |
+
+
+
+ 
+ 
+  - ### NTP Server  Tracking Summary
+
+    🔹 Reference Name
+		 PPS: Indicates the current primary time source used to discipline the system clock.
+
+
+	🔹 Stratum
+		1 : Indicates the NTP hierarchy level.
+        Stratum 1 means : Your server is directly synchronized to GPS (via PPS).
+
+      | Stratum | Meaning                         |
+	  | ------- | ------------------------------- |
+	  | 0       | Atomic clock / GPS hardware     |
+	  | 1       | Directly connected to Stratum 0 |
+	  | 2       | Sync from Stratum 1             |
+	  | 3+      | Further downstream              |
 ​​
    
-   
+    🔹 Ref Time Epoch
+         - The last time the system clock was updated from the reference source.
+		 - High precision timestamp
+
+
+	🔹 System Time Offset
+			Difference between system clock and reference source (in seconds).
+
+
+	🔹 RMS Offset
+    		- Root Mean Square offset. Represents average deviation over time.
+			- Lower RMS = more stable clock.
+
+	🔹 Frequency PPM
+			- Clock frequency correction in Parts Per Million.
+			- Indicates how much the system oscillator is being adjusted.
+				- Higher value = larger correction needed
+				- Happens due to crystal drift
+			- For embedded devices (like Raspberry Pi), some drift is normal.
+			- Chrony continuously corrects this.
+
+	🔹 Skew
+		 - Estimated error margin of the frequency correction.
+		 - Lower skew = higher confidence.
+         - Small skew is good.
+
+	🔹 Root Delay (ms)
+          Total network delay to the ultimate reference clock.
+			For PPS:
+				- Should be near zero
+ 				- 1 nanosecond is extremely small
+				- Indicates local hardware reference
+
+	🔹 Root Dispersion (ms)
+			- Maximum estimated error relative to the primary reference.
+			- Represents accumulated uncertainty.
+			- Lower is better.
+
+	🔹 Last Offset (ms)
+		   - Most recent offset measurement.
+		   - 0.000019 sec = 19 microseconds
+           - Very small — healthy system.
+
+	🔹 Update Interval (s)
+			Polling interval between synchronization updates.
+			Smaller interval = faster correction
+			Longer interval = stable system
+
+
+	🔹 Leap Status
+
+	| Status | Meaning                     |
+	| ------ | --------------------------- |
+	| Normal | No leap second pending      |
+	| Insert | Leap second will be added   |
+	| Delete | Leap second will be removed |
+
