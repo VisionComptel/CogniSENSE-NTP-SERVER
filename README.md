@@ -303,7 +303,8 @@
       - Lower DOP
 
 
-  ### 3️⃣ Used in Fix : Indicates whether this satellite is actively used in the position/time calculation.
+  ### 3️⃣ Used in Fix : 
+   Indicates whether this satellite is actively used in the position/time calculation.
 
 
   ### 4️⃣ SNR (dB) :
